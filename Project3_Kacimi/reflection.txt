@@ -1,1 +1,30 @@
+After revising the HTML form, The most important changes I made to the form is correcting the method="Delete" to method="POST" 
+since HTML forms only support GET and POST. using DELETE would prevent the browser from submitting the form properly
 
+ I applied validation rulesbased on the nature of each input. For example, the usename and password fileds are marked as "required" with
+"maxlength" and "minlength" constraints. The age field uses type="number" with minimum and maximum values. The email field uses type="email".
+Also, I added a JavaSxript function to limit input to only 10 words as stated.
+
+As far as security is concerned, the visibility and behaior of the password field. It used a non-standard class hiden-password missing 
+a proper type which is could expose sensitive data. I corrected it by using type="password" and adding autocomplete="new-password" to prevent 
+autofilling.
+
+If this were a live production form, I would implement SSL/TLS encryption to comply with privacy laws and annonymizing user data to prevent malicous
+attacks like SQL injection and cross-site scripting, and spam bots by implementing CAPTCHA.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+I, AMir Kacimi, affirm that all work submitted in this case study is my own. I have not used AI tools, AI-generated text, or AI-based writing assistants (such as ChatGPT, Gemini, Grammarly AI, etc.) in the creation of this assignment. I understand that using AI tools for this project violates the spirit of ethical learning and may result in academic consequences.
+Signed: _amirouche kacimi_____________________ Date: __11/8/2025_____________
