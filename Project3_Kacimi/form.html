@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Submit User Info</title>
   <link rel="stylesheet" href="styles.css">
+   <script>
+    function validateMessage(input) {
+      const wordCount = input.value.trim().split(/\s+/).length;
+      if (wordCount > 10) {
+        alert("Message must be 10 words or fewer.");
+        input.value = input.value.trim().split(/\s+/).slice(0, 10).join(" ");
+      }
+    }
+  </script>
   </head>
 <body>
 
